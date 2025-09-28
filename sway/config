@@ -5,6 +5,8 @@ exec /usr/libexec/xdg-desktop-portal
 exec /usr/libexec/xdg-desktop-portal-wlr
 exec swaync
 exec_always autotiling
+exec wallpaper 
+
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
@@ -79,7 +81,7 @@ include /etc/sway/config-vars.d/*
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+q exec $term
+    bindsym $mod+q exec alacritty 
     bindsym $mod+e exec $browser
     # Kill focused window
     bindsym $mod+c kill

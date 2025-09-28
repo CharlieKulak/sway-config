@@ -1,14 +1,14 @@
-@define-color bg    #1a1b26; 
-@define-color fg    #a9b1d6; 
-@define-color blk   #32344a; 
-@define-color red   #f7768e; 
-@define-color grn   #9ece6a; 
-@define-color ylw   #e0af68; 
-@define-color blu   #7aa2f7; 
-@define-color mag   #ad8ee6; 
-@define-color cyn   #0db9d7; 
-@define-color brblk #444b6a; 
-@define-color white #ffffff; 
+@define-color bg    #1E2326; /*done*/ 
+@define-color fg    #859289; /*done*/
+@define-color blk   #0c0e0f; /*done*/
+@define-color red   #E67E80; /*done*/ 
+@define-color grn   #A7C080; /*done*/
+@define-color ylw   #DBBC7f; /*done*/
+@define-color blu   #384B55; /*done also, this is background blue FYI */
+@define-color mag   #D699B6; /*done*/
+@define-color cyn   #7FBBB3; /*done*/ 
+@define-color white #9DA9A0; /*done*/ 
+@define-color bkrnd-grn #3C4841;
 
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
@@ -29,7 +29,7 @@ window#waybar {
 }
 #workspaces button.active {
     color: @cyn;
-    border-bottom: 3px solid @mag;
+    border-bottom: 3px solid @bkrnd-grn;
 }
 #workspaces button.empty {
     color: @white;
@@ -55,60 +55,61 @@ button:hover {
 #memory,
 #disk,
 #network,
+#custom-wall,
 #tray {
     padding: 0 8px;
     color: @white;
 }
 
 #custom-sep {
-    color: @brblk;
+    color: @bkrnd-grn;
 }
 
 #custom-wall {
     color: @ylw;
-    border-bottom: 4px solid @ylw;
+    
 }
 
 #custom-logout #custom-shutdown #custom-restart {
-    color: @mag;
-    border-bottom: 4px solid @mag;
+    color: @grn;
+   
 }
 
 #clock {
     color: @cyn;
-    border-bottom: 4px solid @cyn;
+    
 }
 
 #battery {
-    color: @mag;
-    border-bottom: 4px solid @mag;
+    color: @grn;
+   
 }
 
 #disk {
-    color: @ylw;
-    border-bottom: 4px solid @ylw;
+    color: @grn;
+    
 }
 
 #memory {
-    color: @mag;
-    border-bottom: 4px solid @mag;
+    color: @grn;
+   
 }
 
 #cpu {
     color: @grn;
-    border-bottom: 4px solid @grn;
+    
 }
 
 #network {
     color: @blu;
-    border-bottom: 4px solid @blu;
+    
 }
 
-#network.disconnected {
-    background-color: @red;
-}
 
 #tray {
     background-color: #2980b9;
 }
 
+#custom-wall {
+    color: @grn;
+}
